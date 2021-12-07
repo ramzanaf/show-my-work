@@ -1,0 +1,19 @@
+<app-card class="item-card" [ngStyle]="{ 'border-color': color }">
+  <app-card-header>
+    <app-card-image>
+      <fa-icon
+        [icon]="selectIcon"
+        class="customer-icon"
+        [ngStyle]="{ color: color }"
+      ></fa-icon>
+    </app-card-image>
+    <app-card-title>{{ data?.companyName }}</app-card-title>
+    <app-card-sub-title>{{ data.name }}</app-card-sub-title>
+  </app-card-header>
+  <app-card-content>
+    <div class="content">
+      <div>{{ data.address }}</div>
+      <div>{{ data.email }}</div>
+    </div>
+  </app-card-content>
+</app-card>

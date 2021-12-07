@@ -1,0 +1,11 @@
+<app-card class="create-customer-card">
+  <app-card-title> Create customer </app-card-title>
+  <app-card-content>
+    <app-create-item-form
+      class="form"
+      [data]="data$ | async"
+      (onSubmit)="onSubmit($event)"
+      (onCancel)="onCancel()"
+    ></app-create-item-form>
+  </app-card-content>
+</app-card>

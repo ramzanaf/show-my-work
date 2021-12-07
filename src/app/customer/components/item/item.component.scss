@@ -1,0 +1,15 @@
+:host {
+  cursor: pointer;
+  .item-card {
+    max-width: 350px;
+    min-width: 350px;
+    border-top: 4px solid;
+    border-radius: 5px;
+  }
+  .content {
+    color: gray;
+  }
+  .customer-icon {
+    font-size: 30px;
+  }
+}

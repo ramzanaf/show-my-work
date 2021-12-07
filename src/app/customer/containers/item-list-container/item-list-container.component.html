@@ -1,0 +1,25 @@
+<div>
+  <h3>Create new customer or select existing one</h3>
+  <p>Loarm text to show some para. Loarm text to show some para.</p>
+  <app-customer-filter
+    (onChangeAction)="onFilterChange($event)"
+  ></app-customer-filter>
+  <div class="content">
+    <app-card class="customer-add-card" (click)="onAddCustomer()">
+      <app-card-content>
+        <div class="add-customer-button">
+          <span class="plus-icon">
+            <fa-icon [icon]="faPlusIcon" style="color: #fff"></fa-icon>
+          </span>
+          Create new Customer
+        </div></app-card-content
+      >
+    </app-card>
+    <app-item
+      (click)="gotoEditCustomer(item.id)"
+      *ngFor="let item of itemList$ | async"
+      [data]="item"
+      (onBuy)="onBuy($event)"
+    ></app-item>
+  </div>
+</div>

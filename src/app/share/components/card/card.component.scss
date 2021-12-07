@@ -1,0 +1,29 @@
+$padding: 8px;
+.card {
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+
+  padding: $padding;
+}
+.card-header {
+  display: flex;
+  margin-bottom: 10px;
+}
+.card-image {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  margin-right: 10px;
+}
+.card-title {
+  margin-top: 10px;
+  display: block;
+  font-size: 20px;
+}
+.card-sub-title {
+  color: gray;
+}
